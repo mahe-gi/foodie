@@ -1,0 +1,30 @@
+{
+  "name": "foodie",
+  "version": "1.0.0",
+  "description": "food delivery app",
+  "scripts": {
+    "test": "jest",
+    "start":"parcel index.html",
+    "build":"parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahe-gi/foodie.git"
+  },
+  "keywords": [
+    "foodDelivery"
+  ],
+  "author": "Mahesh ch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahe-gi/foodie/issues"
+  },
+  "homepage": "https://github.com/mahe-gi/foodie#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}

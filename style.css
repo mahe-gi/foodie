@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#root{
+    max-width: 100%;
+}
+
+#navBar{
+    height: 70px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+}
+
+#listWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    list-style: none;
+
+}

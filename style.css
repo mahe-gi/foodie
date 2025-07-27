@@ -35,10 +35,36 @@ html,body{
 #body{
     height:calc(100% - 70px);
     padding: 1vw 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
 #card{
     height: 300px ;
-    width: 200px ;
-    background-color: antiquewhite;
+    width: 250px ;
+}
+#imageWrapper{
+    height: 50%;
+    width: 100%;
+}
+#imageWrapper>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+
+}
+#card>#cardText{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1vw 0 1vw 1vw;
+}
+#name{
+    font-size: 1.5vw;
+    font-weight: 800;
 }

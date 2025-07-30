@@ -1,70 +1,77 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html,body{
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
-#root{
-    max-width: 100%;
-    height: 100%;
+#root {
+  max-width: 100%;
+  height: 100%;
 }
-#main{
-    height: 100%;
+#main {
+  height: 100%;
 }
-#navBar{
-    height: 70px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0vw 5vw;
-}
-
-#listWrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5vw;
-    list-style: none;
-
+#navBar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 5vw;
 }
 
-#body{
-    height:calc(100% - 70px);
-    padding: 1vw 2vw;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vw;
+#listWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  list-style: none;
 }
 
-#card{
-    height: 300px ;
-    width: 250px ;
+#body {
+  height: calc(100% - 70px);
 }
-#imageWrapper{
-    height: 50%;
-    width: 100%;
+#rest {
+  padding: 1vw 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
 }
-#imageWrapper>img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 20px;
 
+#search {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-#card>#cardText{
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 1vw 0 1vw 1vw;
+
+#card {
+  height: 300px;
+  width: 250px;
 }
-#name{
-    font-size: 1.5vw;
-    font-weight: 800;
+#imageWrapper {
+  height: 50%;
+  width: 100%;
+}
+#imageWrapper > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+#card > #cardText {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1vw 0 1vw 1vw;
+}
+#name {
+  font-size: 1.5vw;
+  font-weight: 800;
 }

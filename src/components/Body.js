@@ -1,6 +1,8 @@
 import Card from "./Card";
 import { SWIGGY_API } from "../utils/constants";
 import { useEffect, useState } from "react";
+import ShimmerCard from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   let [restaurants, setRestuarents] = useState([]);
@@ -60,11 +62,25 @@ const Body = () => {
         </button>
       </div>
       {filterdArr.length == 0 ? (
-        <div>no restaurants found ! </div>
+        <div id="shimmer-ui">
+          {Array(10)
+            .fill(null)
+            .map((e, i) => {
+              return <ShimmerCard key={i} />;
+            })}
+        </div>
       ) : (
         <div id="rest">
           {filterdArr.map((e) => {
-            return <Card key={e.info.name} data={e.info} />;
+            return (
+              <Link
+                to={"/restaurents/" + e.info.name}
+                key={e.info.name}
+                id="card"
+              >
+                <Card data={e.info} />
+              </Link>
+            );
           })}
         </div>
       )}

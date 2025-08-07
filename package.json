@@ -4,9 +4,9 @@
   "description": "food delivery app",
   "scripts": {
     "test": "jest",
-    "start":"npx parcel index.html",
-    "build":"npx parcel build index.html"
-  }, 
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mahe-gi/foodie.git"
@@ -22,7 +22,8 @@
   "homepage": "https://github.com/mahe-gi/foodie#readme",
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.1"
   },
   "devDependencies": {
     "parcel": "^2.15.4"

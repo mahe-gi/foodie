@@ -16,21 +16,24 @@ export const RestaurantMenu = () => {
     const json = await data.json();
     setresInfo(json.data.cards[0].card.card.imageGridCards.info);
   }
-  console.log(resInfo);
 
+  console.log(resInfo);
   return resInfo === null ? (
     <ShimmerCard />
   ) : (
+    <div>
+      {resInfo.map((e) => {
+        return <MenuCard data={e} key={e.id} />;
+      })}
+    </div>
+  );
+};
+
+const MenuCard = ({ data }) => {
+  console.log(data);
+  return (
     <div id="menu">
-      <h1>name</h1>
-      <h1>menu</h1>
-      <h1>Menu</h1>
-      <ul>
-        <li>Biryani</li>
-        <li>Burgers</li>
-        <li>Diet Coke</li>
-      </ul>
-      RestaurantMenu
+      <h1>{data.action.text}</h1>
     </div>
   );
 };
